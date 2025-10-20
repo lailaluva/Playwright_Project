@@ -1,0 +1,48 @@
+{
+  "baseUrl": "https://reqres.in/api",
+  "getSingleUser": {
+    "endpoint": "/users/2",
+    "expectedData": {
+      "id": 2,
+      "email": "janet.weaver@reqres.in",
+      "first_name": "Janet",
+      "last_name": "Weaver",
+      "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "expectedStatus": 200
+  },
+  "getListOfUsers": {
+    "endpoint": "/users?page=2",
+    "expectedStatus": 200,
+    "page": 2,
+    "expectedData": [
+      {
+        "id": 7,
+        "email": "michael.lawson@reqres.in",
+        "first_name": "Michael",
+        "last_name": "Lawson",
+        "avatar": "https://reqres.in/img/faces/7-image.jpg"
+      },
+       {
+        "id": 8,
+        "email": "lindsay.ferguson@reqres.in",
+        "first_name": "Lindsay",
+        "last_name": "Ferguson",
+        "avatar": "https://reqres.in/img/faces/8-image.jpg"
+      }
+    ]
+
+  },
+    "createUser": {
+        "inputData": {
+            "name": "morpheus",
+            "job": "leader"
+        },
+        "endpoint": "/users",
+        "expectedData": {
+        "name": "morpheus",
+        "job": "leader"
+        },
+        "expectedStatus": 201
+    }
+}
