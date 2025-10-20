@@ -8,5 +8,6 @@ node_modules/
 /playwright/.auth/
 /data/user_cred.json
 /data/user_info.json
+/data/test_data.json
 /logs
 
